@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "f1a1e96f-1107-4f64-94af-be01296dd889",
+		"name": "Mortgage MVP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3300774"
+	},
+	"item": [
+		{
+			"name": "localhost:8081/api/mortgage-check",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"income\": 55000,\r\n    \"maturityPeriod\": 10,\r\n    \"loanValue\": 150000,\r\n    \"homeValue\": 450000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/api/mortgage-check",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"mortgage-check"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/api/interest-rates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/api/interest-rates",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"interest-rates"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
